@@ -1761,6 +1761,8 @@ impl KeyEvent {
         let event_type =
             if flags.contains(KittyKeyboardFlags::REPORT_EVENT_TYPES) && !self.key_is_down {
                 ":3"
+            } else if self.repeat_count != 1 {
+                ":2"
             } else {
                 ""
             };
