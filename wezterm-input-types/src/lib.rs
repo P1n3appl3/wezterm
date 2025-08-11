@@ -2607,7 +2607,7 @@ mod test {
             raw_code: 0,
             #[cfg(windows)]
             scan_code: 0,
-            repeat_count: 1,
+            repeat_count: event.repeat_count,
             key_is_down: event.key_is_down,
             handled: Handled::new(),
         });
